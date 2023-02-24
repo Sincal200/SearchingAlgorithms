@@ -2,6 +2,14 @@
 
 ----
 
+Evidencia de Ejecución:
+
+----
+
+Diagrama de Clases:
+
+----
+
 # Binaria
 (No el mismo que el código pero representa la búsqueda binaria)
 
