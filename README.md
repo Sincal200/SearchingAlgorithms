@@ -3,8 +3,7 @@
 ----
 
 # Binaria
-
-Binario (No el mismo que el código pero representa la búsqueda binaria)
+(No el mismo que el código pero representa la búsqueda binaria)
 
 ----
 
