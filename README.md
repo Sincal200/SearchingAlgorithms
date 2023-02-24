@@ -8,43 +8,43 @@
 ----
 
 
-Funcion pos = busqueda_binaria (arreglo Por Referencia, ce Por Valor, elem Por Valor)
+Funcion position = busqueda_binaria (arreglo Por Referencia, conteo Por Valor, value Por Valor)
 
 	Definir encontro Como Logico
 	
 	encontro = Falso
 	
-	Definir p_inicial Como Entero
+	Definir left Como Entero
 	
-	Definir p_final Como Entero
+	Definir right Como Entero
 	
-	Definir p_medio Como Entero
+	Definir medio Como Entero
 	
-	p_inicial = 1
+	left = 1
 	
-	p_final = ce
+	right = conteo
 	
-	pos = -1
+	position = -1
 	
-	Mientras (encontro = falso ) Y (p_inicial < p_final) Hacer
+	Mientras (encontro = falso ) Y (left < right) Hacer
 	
-		p_medio = trunc((p_inicial + p_final)/2)
+		medio = trunc((left + right)/2)
 		
-		Si arreglo[p_medio] = elem Entonces
+		Si arreglo[medio] = value Entonces
 		
 			encontro = Verdadero
 			
-			pos = p_medio
+			position = medio
 			
 		SiNo
 		
-			Si arreglo[p_medio] < elem Entonces
+			Si arreglo[medio] < value Entonces
 			
-				p_inicial = p_medio + 1
+				left = medio + 1
 				
 			SiNo
 			
-				p_final = p_medio - 1
+				right =medio - 1
 				
 			FinSi
 			
@@ -55,9 +55,9 @@ Funcion pos = busqueda_binaria (arreglo Por Referencia, ce Por Valor, elem Por V
 FinFuncion
 
 
-Funcion imprimir_arreglo(arreglo Por Referencia, ce Por Valor)
+Funcion imprimir_arreglo(arreglo Por Referencia, conteo Por Valor)
 
-	Para i = 1 Hasta ce Con Paso 1 Hacer
+	Para i = 1 Hasta conteo Con Paso 1 Hacer
 	
 		Escribir arreglo[i]
 		
@@ -66,7 +66,7 @@ Funcion imprimir_arreglo(arreglo Por Referencia, ce Por Valor)
 FinFuncion
 
 
-Funcion ce = ingresar_arreglo (arreglo Por Referencia)
+Funcion conteo = ingresar_arreglo (arreglo Por Referencia)
 
 	i = 0
 	
@@ -86,32 +86,32 @@ Funcion ce = ingresar_arreglo (arreglo Por Referencia)
 		
 	Hasta Que nombre=""
 	
-	ce = i
+	conteo = i
 	
 FinFuncion
 
 
-Algoritmo sin_titulo
+Algoritmo Búsqueda_Binaria
 
 	Dimension arreglo[50]
 	
-	ce = ingresar_arreglo(arreglo)
+	conteo = ingresar_arreglo(arreglo)
 	
-	imprimir_arreglo(arreglo,ce)
+	imprimir_arreglo(arreglo,conteo)
 	
 	Escribir "Ingrese un elemento a buscar"
 	
-	Leer elem
+	Leer value
 	
-	pos = busqueda_binaria(arreglo,ce,elem)
+	position = busqueda_binaria(arreglo,conteo,value)
 	
-	Si pos=-1 Entonces
+	Si position=-1 Entonces
 	
 		Escribir "El Elemento no se encuentra"
 		
 	SiNo
 	
-		Escribir "El elemento se ecuentra en la posición:", pos
+		Escribir "El elemento se ecuentra en la posición:", position
 		
 	FinSi
 	
