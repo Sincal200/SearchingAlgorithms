@@ -116,3 +116,101 @@ Algoritmo Búsqueda_Binaria
 	FinSi
 	
 FinAlgoritmo
+
+----
+
+# Lineal
+(No el mismo que el código pero representa la búsqueda lineal)
+
+----
+
+Funcion position = busqueda_lineal (arreglo Por Referencia, conteo Por Valor, value Por Valor) 
+	
+	Definir encontro Como Logico
+	
+	encontro = Falso
+	
+	i = 1
+	
+	position = -1
+	
+	Mientras (i<= conteo)Y(encontro = Falso) Hacer
+	
+		Si	arreglo[i] <> value Entonces
+		
+			i = i +1
+			
+		SiNo
+		
+			encontro = Verdadero
+			
+			position =  i
+			
+		FinSi
+		
+	FinMientras
+	
+FinFuncion
+
+
+Funcion imprimir_arreglo(arreglo Por Referencia, conteo Por Valor)
+
+	Para i = 1 Hasta conteo Con Paso 1 Hacer
+	
+		Escribir arreglo[i]
+		
+	FinPara
+	
+FinFuncion
+
+
+Funcion conteo = ingresar_arreglo (arreglo Por Referencia)
+
+	i = 0
+	
+	Repetir
+	
+		Escribir "Ingrese nombre y apellido"
+		
+		Leer nombre
+		
+		Si nombre<>"" Entonces
+		
+			i = i + 1
+			
+			arreglo[i] = nombre
+			
+		FinSi
+		
+	Hasta Que nombre=""
+	
+	conteo = i
+	
+FinFuncion
+
+
+Algoritmo Búsqeda_Lineal
+
+	Dimension arreglo[50]
+	
+	conteo = ingresar_arreglo(arreglo)
+	
+	imprimir_arreglo(arreglo,conteo)
+	
+	Escribir "Ingrese un elemento a buscar"
+	
+	Leer value
+	
+	position = busqueda_lineal(arreglo,conteo,value)
+	
+	Si position=-1 Entonces
+	
+		Escribir "El Elemento no se encuentra"
+		
+	SiNo
+	
+		Escribir "El elemento se ecuentra en la posición:", position
+		
+	FinSi
+	
+FinAlgoritmo
