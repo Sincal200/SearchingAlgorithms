@@ -10,7 +10,7 @@ Diagrama de Clases:
 
 ----
 
-# Binaria
+# Pseudocódigo: Binaria
 (No el mismo que el código pero representa la búsqueda binaria)
 
 ----
@@ -127,7 +127,7 @@ FinAlgoritmo
 
 ----
 
-# Lineal
+# Pseudocódigo Lineal
 (No el mismo que el código pero representa la búsqueda lineal)
 
 ----
