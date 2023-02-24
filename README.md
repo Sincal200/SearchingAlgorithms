@@ -4,16 +4,26 @@
 
 Binaria y Lineal
 Binario (No el mismo que el código pero representa la búsqueda binaria)
+
 Funcion pos = busqueda_binaria (arreglo Por Referencia, ce Por Valor, elem Por Valor)
-	Definir encontro Como Logico
-	encontro = Falso
-	Definir p_inicial Como Entero
-	Definir p_final Como Entero
-	Definir p_medio Como Entero
-	p_inicial = 1
-	p_final = ce
-	pos = -1
-	Mientras (encontro = falso ) Y (p_inicial < p_final) Hacer
+
+Definir encontro Como Logico
+
+encontro = Falso
+
+Definir p_inicial Como Entero
+
+Definir p_final Como Entero
+
+Definir p_medio Como Entero
+
+p_inicial = 1
+
+p_final = ce
+
+pos = -1
+
+Mientras (encontro = falso ) Y (p_inicial < p_final) Hacer
 		p_medio = trunc((p_inicial + p_final)/2)
 		Si arreglo[p_medio] = elem Entonces
 			encontro = Verdadero
