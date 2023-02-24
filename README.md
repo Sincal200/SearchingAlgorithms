@@ -9,7 +9,6 @@ Binario (No el mismo que el código pero representa la búsqueda binaria)
 ----
 
 Funcion pos = busqueda_binaria (arreglo Por Referencia, ce Por Valor, elem Por Valor)
-
 	Definir encontro Como Logico
 	
 	encontro = Falso
