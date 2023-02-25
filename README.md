@@ -127,7 +127,7 @@ FinAlgoritmo
 
 ----
 
-# Pseudocódigo Lineal
+# Pseudocódigo: Lineal
 (No el mismo que el código pero representa la búsqueda lineal)
 
 ----
